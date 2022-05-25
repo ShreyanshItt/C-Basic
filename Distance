@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main(){
+    float distance, result; 
+    int Convert;
+
+    printf("Enter the Distance : ");
+    scanf("%f",&distance);
+
+    printf("Enter \n 1.To convert into Meters \n 2.To convert into Feet \n 3.To convert into Inches \n 4.To convert into Centimeters \n");
+    scanf("%d",&Convert);
+
+    if (Convert == 1){
+        result = distance * 1000;
+        printf("The distance in Meter is : %f", result);
+    }
+    else if (Convert == 2)
+    {
+        result = distance * 3281;
+        printf("The distance in Feet is : %f", result);
+    }
+    else if (Convert == 3)
+    {
+        result = distance * 39370 ;
+        printf("The distance in Inches is : %f", result);
+    }
+    else if (Convert == 4)
+    {
+        result = distance * 100000;
+        printf("The distance in Centimeters is : %f", result);
+
+    }
+    else {
+        printf("Enter valid value");
+    }
+    
+    
+    
+
+}
